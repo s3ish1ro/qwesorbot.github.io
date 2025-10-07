@@ -7,7 +7,7 @@
   </head>
   <body>
     <script type="text/javascript">
-      document.write("БУ НАХУЙ")
+      document.write("МАМА ВЫЗЫВАЙ ТАКСИ")
     </script>
   </body>
 </html>
