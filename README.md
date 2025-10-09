@@ -2,12 +2,11 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
   <head>
+    <link rel="stylesheet" href="main.css">
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
-    <script type="text/javascript">
-      document.write("МАМА ВЫЗЫВАЙ ТАКСИ")
-    </script>
+    <button on-click=""> ДЕП </button>
   </body>
 </html>
