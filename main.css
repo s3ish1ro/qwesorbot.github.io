@@ -25,12 +25,15 @@ header {
 
 }
 button {
-    width: 15vw;
-    margin-left: 37vw;
+    width: 50%;
+    margin-left: 25vw;
+    font-size: 12px;
+
 
 }
 #answer {
     width: 100vw;
     height: 15vh;
     background-color: gray;
+
 }
