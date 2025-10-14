@@ -1,3 +1,36 @@
+body {
+   margin: 0;
+   background-color: gray;
+}
+header {
+    text-align: center;
+    width: 100vw;
+    height: 5vh;
+    float:left;
+}
+#tenzor, #corner {
+    float:left;
+    width:100vw;
+    background: blue;
+    height: 35vh;
+    display: block;
+}
+
+
+.tenzor_input, .corner_input {
+    width: 15vw;
+    margin-left: 10vw;
+    margin-bottom: 5vh;
+    margin-top: 10px;
+
+}
 button {
-    color: var(--tg-theme-button-color)
+    width: 15vw;
+    margin-left: 37vw;
+
+}
+#answer {
+    width: 100vw;
+    height: 15vh;
+    background-color: gray;
 }
