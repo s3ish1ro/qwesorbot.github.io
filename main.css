@@ -98,12 +98,12 @@ h3{
     float:left;
 }
 .text_overlay{
-    font-size: 3cqh;
+    font-size: min(3cqh,3cqw);
 
 
 }
 #answer_text{
-    font-size: max(14px,3cqh);
+    font-size: min(3cqh,3cqw);
 
 }
 #answer_papa{
@@ -138,3 +138,4 @@ h3{
         transform: rotate(360deg);
     }
 }
+
