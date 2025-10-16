@@ -1,38 +1,43 @@
-function tenzor() {
-    const answer = document.getElementById("answer");
+function tenz() {
+    const data = document.querySelectorAll(".data_input");
     var tenzorie = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
     var corners = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
     var output = 'Ваш прокрученный тензор:' + "<br/>";
     var count_tenzor = 0;
     var count_corner = 0;
-    for (var i = 0; i < 3; i++){
-        for (var j = 0; j < 3; j++){
-            if (document.querySelectorAll('.tenzor_input')[j + 3 * i].value){
+    for (i = 0; i < 3; i++){
+        for(j = 0; j < 3; j++){
+            if (data[j + 3 * i].value){
+                tenzorie[i][j] = data[j + 3 * i].value;
                 count_tenzor += 1;
-                tenzorie[i][j] = parseFloat(document.querySelectorAll('.tenzor_input')[j + 3 * i].value);
             }
-            if (document.querySelectorAll('.corner_input')[j + 3 * i].value){
+        }
+    }
+    for (i = 0; i < 3; i++){
+        for(j = 0; j < 3; j++){
+            if (data[9 + (j + 3 * i)].value) {
+                corners[i][j] = data[9 + (j + 3 * i)].value;
                 count_corner += 1;
-                corners[i][j] = parseFloat(document.querySelectorAll('.corner_input')[j + 3 * i].value);
             }
-
         }
     }
-
-    if (count_tenzor >= 9 && count_corner >= 9) {
-        var new_tenz = prokrutka(tenzorie, corners);
-        for (var i = 0; i < 3; i++){
-            for (var j = 0; j < 3; j++){
-                output += new_tenz[i][j].toString() + " ";
+    if (count_corner >= 9 && count_corner >= 9){
+        var output_tenzor = prokrutka(tenzorie, corners);
+        document.querySelector('#answer_papa').removeAttribute('hidden');
+        document.querySelector('.text_overlay').removeAttribute('hidden');
+        document.querySelector('#answer_papa').classList.toggle('block-spin');
+        for (i = 0; i < 3; i++){
+            for(j = 0; j < 3; j++){
+                output += output_tenzor[i][j] + ' '
+                }
+            output += '<br/>'
             }
-            output += '<br/>';
+        document.querySelector('#answer_text').innerHTML = output;
         }
+    else{
+        alert("введите все числа");
+    }
 
-        answer.innerHTML = output;
-    }
-    else {
-        alert("пожалуйста введи все числа")
-    }
 }
 
 function prokrutka(tenzorochek, corners) {

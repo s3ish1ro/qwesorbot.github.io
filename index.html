@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
   <head>
-    <link rel="stylesheet" href="https://s3ish1ro.github.io/qwesorbot.github.io/main.css">
+    <link rel="stylesheet" href="main.css">
     <meta charset="utf-8">
     <title> DPM </title>
   </head>
   <body>
     <header>
-      СОЧНАЯ ПРОКРУТКА ТЕНЗОРОВ </header>
-    <div id="tenzor">
-      <h3>Введите компоненты</h3>
-      <input class="tenzor_input"
-                  type= "text" placeholder="1">
-      <input class="tenzor_input"
-                  type= "text" placeholder="2">
-      <input class="tenzor_input"
-                  type= "text" placeholder="3">
-      <input class="tenzor_input"
-                  type= "text" placeholder="4">
-      <input class="tenzor_input"
-                  type= "text" placeholder="5">
-      <input class="tenzor_input"
-                  type= "text" placeholder="6">
-      <input class="tenzor_input"
-                  type= "text" placeholder="7">
-      <input class="tenzor_input"
-                  type= "text" placeholder="8">
-      <input class="tenzor_input"
-                  type= "text" placeholder="9">
+      СОЧНАЯ ПРОКРУТКА ТЕНЗОРОЧКОВ </header>
+    <div id="left_side">
+      <img id = "rock" hidden src = "https://donatepay.ru/uploads/donate/avatars/1572424179_106660.gif">
+      <img hidden id = "papa" height="100%" width="100%" src="https://i.pinimg.com/originals/c3/84/8c/c3848c81303fdb875f186f90672f6276.jpg">
     </div>
-    <div id="corner">
-      <h3>Введите углы</h3>
-      <input class="corner_input"
-                  type= "text" placeholder="1">
-        <input class="corner_input"
-                  type= "text" placeholder="2">
-      <input class="corner_input"
-                  type= "text" placeholder="3">
-      <input class="corner_input"
-                  type= "text" placeholder="4">
-      <input class="corner_input"
-                  type= "text" placeholder="5">
-      <input class="corner_input"
-                  type= "text" placeholder="6">
-      <input class="corner_input"
-                  type= "text" placeholder="7">
-      <input class="corner_input"
-                  type= "text" placeholder="8">
-      <input class="corner_input"
-                  type= "text" placeholder="9">
+    <main>
+      <div id="vector_input">
+        <h3>Введите компоненты тензорочка</h3>
+        <input type="text" class="data_input">
+        <input type="text" class="data_input">
+        <input type="text" class="data_input">
+        <input type="text" class="data_input">
+        <input type="text" class="data_input">
+        <input type="text" class="data_input">
+        <input type="text" class="data_input">
+        <input type="text" class="data_input">
+        <input type="text" class="data_input">
+
+      </div>
+      <div id="corner_input">
+        <h3>Введите углы поворота с осями</h3>
+        <input type="text" class="data_input">
+        <input type="text" class="data_input">
+        <input type="text" class="data_input">
+        <input type="text" class="data_input">
+        <input type="text" class="data_input">
+        <input type="text" class="data_input">
+        <input type="text" class="data_input">
+        <input type="text" class="data_input">
+        <input type="text" class="data_input">
+
+      </div>
+      <button id="start" onclick="tenz()"> Прокрутка! </button>
+      <div id = "answer">
+        <div class = 'answer_box'>
+          <p id="answer_text">
+
+          </p>
+        </div>
+        <div  class = "photo_box">
+
+          <div hidden class="text_overlay"> Спасибо за прокрутку!! </div>
+          <img hidden id="answer_papa" src="https://i.pinimg.com/736x/65/ac/2d/65ac2d30004b5fe25dbdd907acc9e49f.jpg">
+
+        </div>
+
+
+      </div>
+    </main>
+
+    <div id="right_side">
 
     </div>
-    <button onclick = "tenzor()"> Прокрутка</button>
-    <div id = "answer">
-
-    </div>
-  <script src = "https://s3ish1ro.github.io/qwesorbot.github.io/main.js"></script>
+    <script src ="main.js">
+    </script>
   </body>
 </html>
-
-
